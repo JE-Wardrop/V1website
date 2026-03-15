@@ -1,0 +1,19 @@
+body {
+  background-color: #f7faff;
+}
+h1 {
+  color: #2b2c2e;
+    font-family: courier;
+}
+p {
+  color: #38393b;
+  font-family: courier;
+  font-size: 160%;
+}
+
+a {
+  color: #261f33;
+  background-color: #c0ddfa;
+  font-weight: bold;
+  font-family: courier;
+}
