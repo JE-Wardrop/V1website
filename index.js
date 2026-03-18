@@ -1,28 +1,18 @@
-function addNumbers(a, b){
-    return a + b;
+const input = document.getElementById("input")
+
+function reverseString(str) {
+    return str.split("").reverse().join("")
 }
 
-const result = addNumbers(5, 3);
-console.log(result);
-
-
-setTimeout(() => {
-    console.log("This runs after 2 seconds");
-}, 2000);
-
-console.log("end")
-
-const body = document.getElementsByTagName("body")[0]
-
-function setColor(name) {
-    body.style.backgroundColor = name;
-}
-
-function randomColor() {
-    const red = Math.round(Math.random() * 255) 
-    const green = Math.round(Math.random() * 255)
-    const blue = Math.round(Math.random() * 255)
+function check() {
+    const value = input.value 
+    const reverse = reverseString(value)
     
-    const color = `rgb(${red}, ${green}, ${blue})`
-    body.style.backgroundColor = color;
+    if (value === reverse) {
+        alert("P A L I N D R O M E")
+    } else {
+        alert("Not today!")
+    }
+
+    input.value = ""
 }
