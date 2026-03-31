@@ -4,7 +4,9 @@ function reverseString(str) {
     return str.split("").reverse().join("")
 }
 
-function check() {
+function checkPalindrome() {
+    var str = document.getElementById('Input').value;    
+    document.getElementById('Input').setText(str + digit);
     const value = input.value 
     const reverse = reverseString(value)
     
