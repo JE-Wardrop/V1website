@@ -1,19 +1,36 @@
 body {
-  background-color: #f7faff;
+  background-color: #fff5f7;
 }
 h1 {
-  color: #2b2c2e;
+  color: #1c1517;
   font-family: courier;
 }
 p {
-  color: #38393b;
+  color: #2e2a2b;
   font-family: courier;
   font-size: 160%;
 }
 
 a {
   color: #261f33;
-  background-color: #c0ddfa;
+  background-color: #ffdee6;
   font-weight: bold;
   font-family: courier;
+}
+
+.content-container{
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  padding-left:10px
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffefa8;
+  color: #2b171c; 
+  text-align: center;
 }
