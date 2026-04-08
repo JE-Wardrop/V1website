@@ -1,20 +1,28 @@
-const input = document.getElementById("input")
+const checkPalbut = document.getElementById("inputPalindrome");
+checkPalbut.addEventListener("click", checkPalindrome);
+
+const checkSepCipherbut = document.getElementById("inputSepCipher");
+checkSepCipherbut.addEventListener("click", checkSepChipher);
 
 function reverseString(str) {
-    return str.split("").reverse().join("")
+    return str.split("").reverse().join("");
 }
 
-function checkPalindrome() {
-    var str = document.getElementById('Input').value;    
-    document.getElementById('Input').setText(str + digit);
-    const value = input.value 
-    const reverse = reverseString(value)
-    
-    if (value === reverse) {
-        alert("P A L I N D R O M E")
-    } else {
-        alert("Not today!")
-    }
+function checkPalindrome(){
+    // const text = inputPalindrome.value;
+    // const reversed = reverseString(text);
 
-    input.value = ""
+    // if (text === reversed) {
+    //     document.getElementById("displayPali").innerHTML = "It is a palindrome!";
+    // } else {
+    //     document.getElementById("displayPali").innerHTML = "Not a palindrome.";
+    // }
+
+    document.getElementById("displayPali").innerHTML = "Not working function yet";
 }
+
+
+function checkSepChipher(){
+
+}
+

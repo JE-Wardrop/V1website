@@ -19,12 +19,50 @@ p {
   font-size: 160%;
 }
 
+label{
+  color: #352429;
+  font-family: courier;
+  background-color: #ffeef2;
+  font-size: 110%;
+}
+
 a {
   color: #261f33;
   background-color: #ffdee6;
   font-weight: bold;
   font-family: courier;
 }
+
+input{
+  color: #2e2a2b;
+  font-family: courier;
+  font-size: 100%;
+  outline: none;
+  box-shadow: none; 
+  border: none;  
+  background-color: #ffdd7e;
+}
+
+button{
+  color: #1c1517;
+  font-family: courier;
+  font-size: 100%;
+  background-color: #ffdee6;
+  font-weight: bold;
+  outline: none;
+  box-shadow: none; 
+  border: none;  
+}
+
+button:hover{
+  background-color: rgb(255, 124, 168);
+}
+
+button:active{
+  background-color: rgb(247, 212, 53);
+}
+
+
 
 .content-container{
   padding-top: 50px;
@@ -35,6 +73,10 @@ a {
 
 .biography{
   box-sizing: border-box;
+}
+
+.vertical-aligned-ciphers{
+
 }
 
 .footer{
