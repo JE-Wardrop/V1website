@@ -1,14 +1,21 @@
-
-body{
-  background-color: rgb(236, 231, 231);
+body {
+  font-weight: bold;
+  font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(233, 240, 255);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Text on screen */
 
 h1 {
   color: #1c1517;
-  background-color: rgb(238, 235, 235);
   font-size: 300%;
   padding: 2%;
-  
 }
 
 h2 {
@@ -28,57 +35,7 @@ label{
   font-size: 110%;
 }
 
-a {
-  color: #261f33;
-  background-color: #ffdee6;
-  padding: 1%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-weight: bold;
-  font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 10fr; 
-  gap: 20px; 
-}
-
-.header{
-  background-color: rgb(255, 250, 244);
-  padding: 15px, 30px;
-  display: flex;
-  align-items: center;
-}
-
-
-.footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #ffefa8;
-  color: #2b171c; 
-  text-align: center;
-}
-
-.biography{
-    box-sizing: border-box;
-    padding: 90px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    background-color: rgb(255, 255, 255)
-}
-
-
-
+/* Inputs (user) */
 
 input{
   color: #2e2a2b;
@@ -101,10 +58,119 @@ button{
   border: none;  
 }
 
-button:hover{
-  background-color: rgb(255, 124, 168);
+/* Styles of the Webpage layout (grid/wrapper) */
+
+/* Side Panel */
+.wrapper {
+  display: flex;
+  height: 100vh;
 }
 
-button:active{
-  background-color: rgb(247, 212, 53);
+.main {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.side-panel-toggle {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+
+  color: #110000;
+  background: #a1c0e2;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+.side-panel-toggle:hover {
+  background: #84dcff;
+}
+
+.side-panel {
+  display: none;
+  width: 200px;
+  flex-shrink: 0;
+  padding: 20px;
+  color: #ffffff;
+  background: #a1c0e2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.side-panel-open .side-panel {
+  display: initial;
+}
+
+/* Menu Panel */
+ul.special-menu {
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+
+ul.special-menu li {
+  position: relative;
+  padding-left: 25px; 
+  margin-bottom: 10px;
+}
+
+ul.special-menu li::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); 
+  color: #ff5722; 
+  font-size: 16px;
+}
+
+.menu-link {
+  text-decoration: none; 
+  outline-style: none !important;
+  /* color: #333333; 
+  display: inline-block; 
+  padding: 10px 20px; */
+}
+
+nav a, .menu a {
+    color: #000000 !important;
+}
+
+nav a:visited, .menu a:visited {
+    color: #000000 !important;
+}
+
+/* Custom Parts */
+
+.cus-header{
+  padding: 15px, 30px;
+  display: flex;
+  align-items: center;
+  color: #1c1517;
+  font-size: 200%;
+  padding: 2%;
+  background-color: #eae8f8;
+}
+
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d2c8ff;
+  color: #2b171c; 
+  text-align: center;
+}
+
+.biography{
+    box-sizing: border-box;
+    padding: 90px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 80 vh;
+    background-color: rgb(255, 255, 255)
 }
