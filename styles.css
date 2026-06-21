@@ -123,7 +123,7 @@ ul.special-menu li::before {
   left: 0;
   top: 50%;
   transform: translateY(-50%); 
-  color: #ff5722; 
+  color: #3122ff; 
   font-size: 16px;
 }
 
@@ -152,7 +152,7 @@ nav a:visited, .menu a:visited {
   color: #1c1517;
   font-size: 200%;
   padding: 2%;
-  background-color: #eae8f8;
+  background-color: #a1c0e2;
 }
 
 
@@ -161,7 +161,7 @@ nav a:visited, .menu a:visited {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #d2c8ff;
+  background-color: #a1c0e2;
   color: #2b171c; 
   text-align: center;
 }
